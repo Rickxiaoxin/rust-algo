@@ -1,0 +1,84 @@
+[package]
+name = "hello-algo"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[[bin]]
+name = "iteration"
+path = "chapter_computational_complexity/iteration.rs"
+
+[[bin]]
+name = "recursion"
+path = "chapter_computational_complexity/recursion.rs"
+
+[[bin]]
+name = "space_complexity"
+path = "chapter_computational_complexity/space_complexity.rs"
+
+# Run Command: cargo run --bin array
+[[bin]]
+name = "array"
+path = "chapter_array_and_linkedlist/array.rs"
+
+# Run Command: cargo run --bin linked_list
+[[bin]]
+name = "linked_list"
+path = "chapter_array_and_linkedlist/linked_list.rs"
+
+# Run Command: cargo run --bin list
+[[bin]]
+name = "list"
+path = "chapter_array_and_linkedlist/list.rs"
+
+[[bin]]
+name = "stack"
+path = "chapter_stack_and_queue/stack.rs"
+
+[[bin]]
+name = "linkedlist_stack"
+path = "chapter_stack_and_queue/linkedlist_stack.rs"
+
+[[bin]]
+name = "array_stack"
+path = "chapter_stack_and_queue/array_stack.rs"
+
+[[bin]]
+name = "queue"
+path = "chapter_stack_and_queue/queue.rs"
+
+[[bin]]
+name = "linkedlist_queue"
+path = "chapter_stack_and_queue/linkedlist_queue.rs"
+
+[[bin]]
+name = "array_queue"
+path = "chapter_stack_and_queue/array_queue.rs"
+
+[[bin]]
+name = "deque"
+path = "chapter_stack_and_queue/deque.rs"
+
+# [[bin]]
+# name = "linkedlist_deque"
+# path = "chapter_stack_and_queue/linkedlist_deque.rs"
+
+
+# [[bin]]
+# name = "array_deque"
+# path = "chapter_stack_and_queue/array_deque.rs"
+
+[[bin]]
+name = "hash_map"
+path = "chapter_hashing/hash_map.rs"
+
+[[bin]]
+name = "hash_map_chaining"
+path = "chapter_hashing/hash_map_chaining.rs"
+
+[[bin]]
+name = "hash_map_open_addressing"
+path = "chapter_hashing/hash_map_open_addressing.rs"
+
+[dependencies]
+rand = "0.8.5"
