@@ -1,3 +1,5 @@
+#![allow(unused)]
+
 include!("../include/include.rs");
 
 use list_node::ListNode;

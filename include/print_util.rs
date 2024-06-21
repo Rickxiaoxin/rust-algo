@@ -1,9 +1,17 @@
+#![allow(unused)]
+
 use std::cell::{Cell, RefCell};
 use std::collections::{HashMap, VecDeque};
 use std::fmt::Display;
 use std::rc::Rc;
 
 use crate::list_node::ListNode;
+use crate::tree_node::{vec_to_tree, TreeNode};
+
+struct Trunk<'a, 'b> {
+    prev: Option<&'a Trunk<'a, 'b>>,
+    str: Cell<&'b str>,
+}
 
 // 打印数组
 pub fn print_array<T: Display>(nums: &[T]) {
@@ -39,5 +47,48 @@ pub fn print_queue<T: Display>(queue: &VecDeque<T>) {
     let iter = queue.iter();
     for (i, data) in iter.enumerate() {
         print!("{}{}", data, if i == queue.len() - 1 { "]" } else { ", " });
+    }
+}
+
+/* 打印二叉树 */
+pub fn print_tree(root: &Rc<RefCell<TreeNode>>) {
+    _print_tree(Some(root), None, false);
+}
+
+/* 打印二叉树 */
+fn _print_tree(root: Option<&Rc<RefCell<TreeNode>>>, prev: Option<&Trunk>, is_right: bool) {
+    if let Some(node) = root {
+        let mut prev_str = "    ";
+        let trunk = Trunk {
+            prev,
+            str: Cell::new(prev_str),
+        };
+        _print_tree(node.borrow().right.as_ref(), Some(&trunk), true);
+
+        if prev.is_none() {
+            trunk.str.set("———");
+        } else if is_right {
+            trunk.str.set("/———");
+            prev_str = "   |";
+        } else {
+            trunk.str.set("\\———");
+            prev.as_ref().unwrap().str.set(prev_str);
+        }
+
+        show_trunks(Some(&trunk));
+        println!(" {}", node.borrow().val);
+        if let Some(prev) = prev {
+            prev.str.set(prev_str);
+        }
+        trunk.str.set("   |");
+
+        _print_tree(node.borrow().left.as_ref(), Some(&trunk), false);
+    }
+}
+
+fn show_trunks(trunk: Option<&Trunk>) {
+    if let Some(trunk) = trunk {
+        show_trunks(trunk.prev);
+        print!("{}", trunk.str.get());
     }
 }

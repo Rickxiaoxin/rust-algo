@@ -80,5 +80,13 @@ path = "chapter_hashing/hash_map_chaining.rs"
 name = "hash_map_open_addressing"
 path = "chapter_hashing/hash_map_open_addressing.rs"
 
+[[bin]]
+name = "simple_hash"
+path = "chapter_hashing/simple_hash.rs"
+
+[[bin]]
+name = "binary_tree"
+path = "chapter_tree/binary_tree.rs"
+
 [dependencies]
 rand = "0.8.5"
