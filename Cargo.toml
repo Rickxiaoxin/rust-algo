@@ -88,5 +88,33 @@ path = "chapter_hashing/simple_hash.rs"
 name = "binary_tree"
 path = "chapter_tree/binary_tree.rs"
 
+[[bin]]
+name = "array_binary_tree"
+path = "chapter_tree/array_binary_tree.rs"
+
+[[bin]]
+name = "binary_tree_bfs"
+path = "chapter_tree/binary_tree_bfs.rs"
+
+[[bin]]
+name = "binary_tree_dfs"
+path = "chapter_tree/binary_tree_dfs.rs"
+
+[[bin]]
+name = "binary_search_tree"
+path = "chapter_tree/binary_search_tree.rs"
+
+[[bin]]
+name = "heap"
+path = "chapter_heap/heap.rs"
+
+[[bin]]
+name = "my_heap"
+path = "chapter_heap/my_heap.rs"
+
+[[bin]]
+name="top_k"
+path="chapter_heap/top_k.rs"
+
 [dependencies]
 rand = "0.8.5"

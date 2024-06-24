@@ -1,6 +1,7 @@
 #![allow(unused)]
 
 use std::cell::{Cell, RefCell};
+use std::collections::btree_map::Values;
 use std::collections::{HashMap, VecDeque};
 use std::fmt::Display;
 use std::rc::Rc;
@@ -90,5 +91,14 @@ fn show_trunks(trunk: Option<&Trunk>) {
     if let Some(trunk) = trunk {
         show_trunks(trunk.prev);
         print!("{}", trunk.str.get());
+    }
+}
+
+// 打印堆
+pub fn print_heap(heap: Vec<i32>) {
+    println!("堆的数组表示：{:?}", heap);
+    println!("堆的树状表示：");
+    if let Some(root) = vec_to_tree(heap.into_iter().map(|val| Some(val)).collect()) {
+        print_tree(&root);
     }
 }
