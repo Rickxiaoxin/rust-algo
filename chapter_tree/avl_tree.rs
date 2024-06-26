@@ -1,9 +1,3 @@
-/*
- * File: avl_tree.rs
- * Created Time: 2023-07-14
- * Author: night-cruise (2586447362@qq.com)
- */
-
 include!("../include/include.rs");
 
 use std::cell::RefCell;
