@@ -105,6 +105,10 @@ name = "binary_search_tree"
 path = "chapter_tree/binary_search_tree.rs"
 
 [[bin]]
+name = "avl_tree"
+path = "chapter_tree/avl_tree.rs"
+
+[[bin]]
 name = "heap"
 path = "chapter_heap/heap.rs"
 
@@ -113,8 +117,8 @@ name = "my_heap"
 path = "chapter_heap/my_heap.rs"
 
 [[bin]]
-name="top_k"
-path="chapter_heap/top_k.rs"
+name = "top_k"
+path = "chapter_heap/top_k.rs"
 
 [dependencies]
 rand = "0.8.5"
