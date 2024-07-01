@@ -1,9 +1,3 @@
-/*
- * File: binary_search_tree.rs
- * Created Time: 2023-04-20
- * Author: xBLACKICEx (xBLACKICE@outlook.com)、night-cruise (2586447362@qq.com)
- */
-
 include!("../include/include.rs");
 
 use std::cell::RefCell;
