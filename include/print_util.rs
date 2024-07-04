@@ -22,7 +22,7 @@ pub fn print_array<T: Display>(nums: &[T]) {
             print!("{}{}", num, if i == nums.len() - 1 { "]" } else { ", " });
         }
     } else {
-        print!("]");
+        println!("]");
     }
 }
 

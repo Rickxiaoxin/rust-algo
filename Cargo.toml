@@ -136,5 +136,25 @@ path = "chapter_graph/graph_bfs.rs"
 name = "graph_dfs"
 path = "chapter_graph/graph_dfs.rs"
 
+[[bin]]
+name = "binary_search"
+path = "chapter_searching/binary_search.rs"
+
+[[bin]]
+name = "binary_search_insertion"
+path = "chapter_searching/binary_search_insertion.rs"
+
+[[bin]]
+name = "binary_search_edge"
+path = "chapter_searching/binary_search_edge.rs"
+
+[[bin]]
+name = "two_sum"
+path = "chapter_searching/two_sum.rs"
+
+[[bin]]
+name = "selection_sort"
+path = "chapter_sorting/selection_sort.rs"
+
 [dependencies]
 rand = "0.8.5"
