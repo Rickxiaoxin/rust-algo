@@ -168,5 +168,13 @@ path = "chapter_sorting/insertion_sort.rs"
 name = "quick_sort"
 path = "chapter_sorting/quick_sort.rs"
 
+[[bin]]
+name = "merge_sort"
+path = "chapter_sorting/merge_sort.rs"
+
+[[bin]]
+name = "heap_sort"
+path = "chapter_sorting/heap_sort.rs"
+
 [dependencies]
 rand = "0.8.5"
