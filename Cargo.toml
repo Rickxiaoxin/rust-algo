@@ -176,5 +176,17 @@ path = "chapter_sorting/merge_sort.rs"
 name = "heap_sort"
 path = "chapter_sorting/heap_sort.rs"
 
+[[bin]]
+name = "bucket_sort"
+path = "chapter_sorting/bucket_sort.rs"
+
+[[bin]]
+name = "counting_sort"
+path = "chapter_sorting/counting_sort.rs"
+
+[[bin]]
+name = "radix_sort"
+path = "chapter_sorting/radix_sort.rs"
+
 [dependencies]
 rand = "0.8.5"

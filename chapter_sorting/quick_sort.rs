@@ -111,7 +111,7 @@ impl QuickSortTailCall {
         while left < right {
             // 哨兵划分操作
             let pivot = Self::partition(nums, left as usize, right as usize) as i32;
-            // 对两个i子数组中较短的那个执行快速排序
+            // 对两个子数组中较短的那个执行快速排序
             if pivot - left < right - pivot {
                 Self::quick_sort(left, pivot - 1, nums); // 递归排序左子数组
                 left = pivot + 1; // 剩余未排序区间为[pivot + 1, right]
