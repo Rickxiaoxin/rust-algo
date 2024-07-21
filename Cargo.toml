@@ -188,5 +188,13 @@ path = "chapter_sorting/counting_sort.rs"
 name = "radix_sort"
 path = "chapter_sorting/radix_sort.rs"
 
+[[bin]]
+name = "binary_search_recur"
+path = "chapter_divide_and_conquer/binary_search_recur.rs"
+
+[[bin]]
+name="build_tree"
+path="chapter_divide_and_conquer/build_tree.rs"
+
 [dependencies]
 rand = "0.8.5"
