@@ -193,8 +193,20 @@ name = "binary_search_recur"
 path = "chapter_divide_and_conquer/binary_search_recur.rs"
 
 [[bin]]
-name="build_tree"
-path="chapter_divide_and_conquer/build_tree.rs"
+name = "build_tree"
+path = "chapter_divide_and_conquer/build_tree.rs"
+
+[[bin]]
+name = "hanota"
+path = "chapter_divide_and_conquer/hanota.rs"
+
+[[bin]]
+name = "preorder_traversal_i_compact"
+path = "chapter_backtracking/preorder_traversal_i_compact.rs"
+
+[[bin]]
+name = "preorder_traversal_ii_compact"
+path = "chapter_backtracking/preorder_traversal_ii_compact.rs"
 
 [dependencies]
 rand = "0.8.5"
