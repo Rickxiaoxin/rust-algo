@@ -221,8 +221,16 @@ name = "permutations_ii"
 path = "chapter_backtracking/permutations_ii.rs"
 
 [[bin]]
-name="subset_sum_i_naive"
+name = "subset_sum_i_naive"
 path = "chapter_backtracking/subset_sum_i_naive.rs"
+
+[[bin]]
+name = "subset_sum_i"
+path = "chapter_backtracking/subset_sum_i.rs"
+
+[[bin]]
+name = "subset_sum_ii"
+path = "chapter_backtracking/subset_sum_ii.rs"
 
 [dependencies]
 rand = "0.8.5"
