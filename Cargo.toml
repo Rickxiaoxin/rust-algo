@@ -256,5 +256,13 @@ path = "chapter_dynamic_programming/climbing_stairs_dp.rs"
 name = "min_cost_climbing_stairs_dp"
 path = "chapter_dynamic_programming/min_cost_climbing_stairs_dp.rs"
 
+[[bin]]
+name="climbing_stairs_constraint_dp"
+path="chapter_dynamic_programming/climbing_stairs_constraint_dp.rs"
+
+[[bin]]
+name="min_path_sum"
+path="chapter_dynamic_programming/min_path_sum.rs"
+
 [dependencies]
 rand = "0.8.5"
