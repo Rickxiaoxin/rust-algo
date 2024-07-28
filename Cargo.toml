@@ -257,12 +257,28 @@ name = "min_cost_climbing_stairs_dp"
 path = "chapter_dynamic_programming/min_cost_climbing_stairs_dp.rs"
 
 [[bin]]
-name="climbing_stairs_constraint_dp"
-path="chapter_dynamic_programming/climbing_stairs_constraint_dp.rs"
+name = "climbing_stairs_constraint_dp"
+path = "chapter_dynamic_programming/climbing_stairs_constraint_dp.rs"
 
 [[bin]]
-name="min_path_sum"
-path="chapter_dynamic_programming/min_path_sum.rs"
+name = "min_path_sum"
+path = "chapter_dynamic_programming/min_path_sum.rs"
+
+[[bin]]
+name = "knapsack"
+path = "chapter_dynamic_programming/knapsack.rs"
+
+[[bin]]
+name = "unbounded_knapsack"
+path = "chapter_dynamic_programming/unbounded_knapsack.rs"
+
+[[bin]]
+name = "coin_change"
+path = "chapter_dynamic_programming/coin_change.rs"
+
+[[bin]]
+name = "coin_change_ii"
+path = "chapter_dynamic_programming/coin_change_ii.rs"
 
 [dependencies]
 rand = "0.8.5"
