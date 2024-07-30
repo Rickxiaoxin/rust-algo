@@ -288,5 +288,17 @@ path = "chapter_dynamic_programming/edit_distance.rs"
 name = "coin_change_greedy"
 path = "chapter_greedy/coin_change_greedy.rs"
 
+[[bin]]
+name = "fractional_knapsack"
+path = "chapter_greedy/fractional_knapsack.rs"
+
+[[bin]]
+name = "max_capacity"
+path = "chapter_greedy/max_capacity.rs"
+
+[[bin]]
+name = "max_product_cutting"
+path = "chapter_greedy/max_product_cutting.rs"
+
 [dependencies]
 rand = "0.8.5"
